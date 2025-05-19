@@ -1,0 +1,221 @@
+Hallmate
+Hallmate is an Android-based hall and mess management system for university students and administrators. It streamlines meal planning, cost management, billing, complaints, and notifications for both hall residents and hall admins.
+
+Features
+Authentication:
+
+Signup/Login with email and password using Firebase Authentication
+
+Student Features:
+
+View daily and weekly meal menus
+
+Toggle meal status
+
+Submit and view complaints
+
+View meal cost and monthly billing
+
+Receive real-time notifications from admin
+
+Admin Features:
+
+View student list
+
+View and manage complaints
+
+Edit meal menus
+
+Update daily raw material and extra costs
+
+View monthly cost summaries
+
+Send notifications to students
+
+Mark students as paid/unpaid
+
+Automate penalties for late payments
+
+App Architecture
+The app follows a basic MVVM-like architecture using Firebase:
+
+View Layer: Activities for both users and admins
+
+Logic Layer: FirebaseHelper (acts like a repository)
+
+Data Layer: Firebase Realtime Database, Firebase Authentication, and Firebase Cloud Messaging
+
+Data is categorized by:
+
+Hall name (e.g., A.F Rahman Hall, Shaheed Habibur Rahman Hall, etc.)
+
+Users and students stored by ID
+
+Meal entries tracked by date
+
+Bills and notifications handled per student
+
+Tech Stack
+Language: Java
+
+IDE: Android Studio
+
+Backend: Firebase (Realtime Database, Authentication, Cloud Messaging)
+
+Architecture: MVVM (manually implemented)
+
+Minimum SDK: API 24 (Android 7.0)
+
+Folder and File Structure
+Main Java Package contains:
+
+Activities:
+
+LoginActivity
+
+SignupActivity
+
+SplashActivity
+
+MainActivity
+
+MainPage
+
+Adapters:
+
+ComplaintAdapter
+
+DailyMealCostAdapter
+
+MealCostItem
+
+MealStudentAdapter
+
+NotificationAdapter
+
+StudentAdapter
+
+Admin Side:
+
+AdminComplaintActivity
+
+AdminDashboard
+
+ComplaintListActivity
+
+EditMealMenuActivity
+
+MealCostSummeryActivity
+
+StudentListActivity
+
+User Side:
+
+DailyMealCostActivity
+
+DefaultMealStatusSetter
+
+MealToggleActivity
+
+NotificationsActivity
+
+StudentComplaintActivity
+
+UserDashboard
+
+WeeklyMenuActivity
+
+Models:
+
+ComplaintModel
+
+DailyMealCostModel
+
+MealMenuModel
+
+MealStudent
+
+MonthlyBill
+
+Notification
+
+StudentMeal
+
+StudentModel
+
+UserModel
+
+Services:
+
+MyFirebaseMessagingServices
+
+Helper:
+
+FirebaseHelper
+
+How to Run the Project
+Step 1: Clone the Repository
+
+Download or clone the GitHub repository
+
+Open Android Studio
+
+Choose “Open an existing project”
+
+Navigate to the downloaded folder and open it
+
+Step 2: Connect to Firebase
+
+Go to https://console.firebase.google.com/
+
+Create a new Firebase project
+
+Register your Android app with the package name from AndroidManifest.xml
+
+Download the google-services.json file
+
+Place it in the /app directory of your project
+
+Step 3: Enable Firebase Services
+In Firebase Console:
+
+Go to Authentication > Enable Email/Password
+
+Go to Realtime Database > Create database > Start in test mode (or set custom rules)
+
+Go to Cloud Messaging > Set up FCM
+
+Step 4: Configure Database Structure (optional starter format)
+
+Example:
+Users/
+Students/
+Meals/
+Billing/
+Complaints/
+Notifications/
+
+Step 5: Sync and Run
+
+Click “Sync Now” in Android Studio
+
+Connect your emulator or device
+
+Run the app from Android Studio
+
+Important Notes
+Use Java 23.0.2 or higher
+
+Ensure you have Firebase plugins in your build.gradle file
+
+Register MyFirebaseMessagingServices in AndroidManifest.xml
+
+Use test Firebase rules during development
+
+Handle internet permissions in AndroidManifest
+
+Contact and Contribution
+Developed by: Tech Fiesta
+If you want to contribute, feel free to fork the project and improve it.
+Email: your-techfiestaservice@gmail.com
+GitHub: https://github.com/rakatashraf
