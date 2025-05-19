@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HallMate"
+        tools:targetApi="31">
+        <activity
+            android:name=".rounded_button"
+            android:exported="false" />
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Core Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- User Activities -->
+        <activity
+            android:name=".userside.UserDashboard"
+            android:exported="true" />
+        <activity android:name=".userside.WeeklyMenuActivity" />
+        <activity android:name=".userside.MonthlyBillActivity" />
+        <activity android:name=".userside.MealToggleActivity" />
+        <activity android:name=".userside.StudentComplaintActivity" />
+        <activity android:name=".userside.NotificationsActivity" />
+        <activity android:name=".userside.DailyMealCostActivity" /> <!-- Admin Activities -->
+        <activity
+            android:name=".adminside.AdminComplaintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".adminside.AdminDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".adminside.ComplaintListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".adminside.EditMealMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".adminside.MealCostSummaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".adminside.StudentListActivity"
+            android:exported="true" /> <!-- Firebase Messaging Service -->
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
