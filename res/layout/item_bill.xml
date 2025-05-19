@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="24dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="28dp"
+        android:background="@drawable/dashboard">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost Summary"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="#222222"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Start Date -->
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="🟢 Start Date:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- End Date -->
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="🔚 End Date:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStartDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Paid Date -->
+        <TextView
+            android:id="@+id/tvPaidDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="💳 Paid Date:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvEndDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="📌 Status:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvPaidDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Staff Cost -->
+        <TextView
+            android:id="@+id/tvStaffCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="👨‍🍳 Staff Meal Cost:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Student Cost -->
+        <TextView
+            android:id="@+id/tvStudentCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="👨‍🎓 Student Meal Cost:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStaffCost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Utility Bill -->
+        <TextView
+            android:id="@+id/tvUtilityBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="💡 Utility Bill:"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStudentCost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Penalty Amount -->
+        <TextView
+            android:id="@+id/tvPenaltyAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Penalty Amount: ৳0"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvUtilityBill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Penalty Days -->
+        <TextView
+            android:id="@+id/tvPenaltyDays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="📅 Penalty Days: 0"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@id/tvPenaltyAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="🧾 Total:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvPenaltyDays"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/userIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID" />
+
+    <TextView
+        android:id="@+id/totalBillText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="View Details" />
+
+        <Button
+            android:id="@+id/markAsPaidButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mark as Paid" />
+    </LinearLayout>
+</LinearLayout>
