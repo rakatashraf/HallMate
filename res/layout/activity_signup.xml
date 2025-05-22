@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/userlogo"
+            app:tint="@color/start" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_person"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <!-- Student ID -->
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_id_select"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Student ID"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_number"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_email_select"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <!-- Password with toggle -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_password_select"
+                android:background="@drawable/backgroundsignineditview"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="40dp" />
+
+            <ImageView
+                android:id="@+id/passwordToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_visibility_off"
+                android:contentDescription="Toggle Password Visibility" />
+        </RelativeLayout>
+
+        <!-- Hall -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Select Hall">
+
+            <AutoCompleteTextView
+                android:id="@+id/hallName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_hall"
+                android:background="@drawable/backgroundsignineditview"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:dropDownHeight="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Room, Batch, Department, Session -->
+        <EditText
+            android:id="@+id/roomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_room"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Room Number"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <EditText
+            android:id="@+id/batch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_batch"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Batch"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_dept"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Department"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <EditText
+            android:id="@+id/session"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:background="@drawable/backgroundsignineditview"
+            android:hint="Enter Session"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- ProgressBar (hidden initially) -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/backRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Already have an account? Log in"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

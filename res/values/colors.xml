@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#34858383</color>
+
+    <color name="start">#947B57</color>
+    <color name="end">#9E6511</color>
+    <color name="front">#FAD76A</color>
+    <color name="card_shadow">#8000</color>
+    <color name="card_background_default">#F6F6F6</color>
+    <color name="card_background_selected">#CCC</color>
+
+    <color name="gradient_bg">#FF7F50</color>
+    <color name="pastel_purple">#B39DDB</color>
+    <color name="switch_track_on">#81C784</color>
+    <color name="switch_thumb_on">#388E3C</color>
+    <color name="red">#FF0000</color>
+    <color name="track_color_on">#FFBB86FC</color>
+    <color name="green">#4CAF50</color>
+    <color name="track_color_off">#BDBDBD</color>
+</resources>

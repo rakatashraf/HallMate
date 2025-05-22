@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvComplaintTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvComplaintDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint description"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvComplaintName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submitted by"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvComplaintTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/btnSolveComplaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solved"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

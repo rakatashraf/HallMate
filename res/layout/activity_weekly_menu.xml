@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/dashboard">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:padding="16dp">
+
+        <TableLayout
+            android:id="@+id/tableLayoutMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3"
+            android:shrinkColumns="1,2,3">
+
+            <!-- Styled Header Row -->
+            <TableRow
+                android:background="@drawable/gradient"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:text="Day"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Breakfast"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Lunch"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Dinner"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:gravity="center" />
+            </TableRow>
+
+            <!-- Dynamic rows will be added from Java -->
+
+        </TableLayout>
+    </HorizontalScrollView>
+</ScrollView>
